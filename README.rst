@@ -1,17 +1,20 @@
-FCClientJS
-==========
+Inofficial BetaFace webrtc demo
+===============================
 
-SkyBiometry Face Detection and Recognition API JavaScript client library.
+**Warning:** I haven't slept enough, I am under a potentially deadly dose of caffeine 
+and I should not operate any heavy machines right now. This code is horrific, ungly and it may harm kittens when you're not watching.
 
-For more information about the API and the return values, visit the `official documentation`_.
+Take this as a fun inspiration and play around with it - but do not go into the code and go "That's how I am going to do it".
 
-#. Create an application in you `SkyBiometry account page`_. This will generate a pair of strings, namely API_KEY and API_SECRET.
-#. Modify this line in 'example/index.html':
+# What's this?
 
-    var client = new FCClientJS(!!!REPLACE_WITH_YOUR_API_KEY!!!, !!!REPLACE_WITH_YOUR_API_SECRET!!!);
+With the mucho importante warning aside: This is fun. 
 
-#. Open 'index.html' in any browser which at least supports JavaScripts.
+This experiment takes a snapshot of the webcam video stream (also on mobile browsers if they're fresh enough) and uploads it to BetaFace.
 
-.. _SkyBiometry account page: http://www.skybiometry.com/Account
-.. _official documentation: http://www.skybiometry.com/Documentation
+You can upload pictures to Betaface and do face detection. You'll get a ``face_uid`` for each detected face.
+Enter these into the ``KNOWN_PEOPLE`` array in ``index.html`` and then use the webcam and the small "Go" button to get face recognition...
 
+FUN! :)
+
+There's a [demo video available](http://t.co/OV5aQkPZsw).
