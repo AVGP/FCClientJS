@@ -124,7 +124,7 @@
 				function callback(data) {
 					drawFaces($("#conent_demo_image"), data.photos[0], true);
 				}
-				var client = new FCClientJS(!!!REPLACE_WITH_YOUR_API_KEY!!!, !!!REPLACE_WITH_YOUR_API_SECRET!!!);
+				var client = new FCClientJS("0c36e1d11d224b17bbdae5d1afc2f252", "77e721a5e136486f8b85a5cfbb9066ef");
 				var options = new Object();
 				options.detect_all_feature_points = true;
 				client.facesDetect("http://skybiometry.com/Content/Samples/one_i.jpg", null, options, callback)
